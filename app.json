@@ -1,0 +1,1 @@
+{"expo":{"name":"CampusRide","slug":"campusride-mobile","version":"1.0.0","orientation":"portrait","ios":{"supportsTablet":true,"bundleIdentifier":"com.campusride.app","infoPlist":{"NSPhotoLibraryUsageDescription":"Choose your profile and car photos."}},"android":{"package":"com.campusride.app"}}}
