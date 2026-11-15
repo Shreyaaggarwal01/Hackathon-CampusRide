@@ -1,0 +1,3 @@
+CREATE TABLE `rides` (`id` text PRIMARY KEY NOT NULL, `driver_id` text NOT NULL, `driver_name` text NOT NULL, `origin` text NOT NULL, `destination` text NOT NULL, `departure` text NOT NULL, `seats` integer NOT NULL, `price` integer NOT NULL, `car` text NOT NULL, `status` text DEFAULT 'open' NOT NULL);
+--> statement-breakpoint
+CREATE TABLE `requests` (`id` text PRIMARY KEY NOT NULL, `ride_id` text NOT NULL, `rider_id` text NOT NULL, `rider_name` text NOT NULL, `seats` integer NOT NULL, `offer` integer NOT NULL, `status` text DEFAULT 'pending' NOT NULL, FOREIGN KEY (`ride_id`) REFERENCES `rides`(`id`));
